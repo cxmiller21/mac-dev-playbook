@@ -1,6 +1,6 @@
-<img src="https://raw.githubusercontent.com/geerlingguy/mac-dev-playbook/master/files/Mac-Dev-Playbook-Logo.png" width="250" height="156" alt="Mac Dev Playbook Logo" />
+<img src="https://raw.githubusercontent.com/cxmiller/mac-dev-playbook/master/files/Mac-Dev-Playbook-Logo.png" width="250" height="156" alt="Mac Dev Playbook Logo" />
 
-# Mac Development Ansible Playbook
+# Cooper's Mac Development Ansible Playbook
 
 [![CI][badge-gh-actions]][link-gh-actions]
 
@@ -20,25 +20,6 @@ This playbook installs and configures most of the software I use on my Mac for w
   5. Run `ansible-playbook main.yml --ask-become-pass` inside this directory. Enter your macOS account password when prompted for the 'BECOME' password.
 
 > Note: If some Homebrew commands fail, you might need to agree to Xcode's license or fix some other Brew issue. Run `brew doctor` to see if this is the case.
-
-### Use with a remote Mac
-
-You can use this playbook to manage other Macs as well; the playbook doesn't even need to be run from a Mac at all! If you want to manage a remote Mac, either another Mac on your network, or a hosted Mac like the ones from [MacStadium](https://www.macstadium.com), you just need to make sure you can connect to it with SSH:
-
-  1. (On the Mac you want to connect to:) Go to System Preferences > Sharing.
-  2. Enable 'Remote Login'.
-
-> You can also enable remote login on the command line:
->
->     sudo systemsetup -setremotelogin on
-
-Then edit the `inventory` file in this repository and change the line that starts with `127.0.0.1` to:
-
-```
-[ip address or hostname of mac]  ansible_user=[mac ssh username]
-```
-
-If you need to supply an SSH password (if you don't use SSH keys), make sure to pass the `--ask-pass` parameter to the `ansible-playbook` command.
 
 ### Running a specific set of tagged tasks
 
