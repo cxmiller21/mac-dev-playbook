@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/cxmiller/mac-dev-playbook/master/files/Mac-Dev-Playbook-Logo.png" width="250" height="156" alt="Mac Dev Playbook Logo" />
+<img src="https://raw.githubusercontent.com/cxmiller21/mac-dev-playbook/master/files/Mac-Dev-Playbook-Logo.png" width="250" height="156" alt="Mac Dev Playbook Logo" />
 
 # Cooper's Mac Development Ansible Playbook
 
