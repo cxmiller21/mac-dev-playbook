@@ -36,8 +36,8 @@ sudoers_custom_config: ''
 
 homebrew_installed_packages:
   # - ansible # Installed via Pip.
-  # - autoconf
-  # - bash-completion
+  - autoconf
+  - bash-completion
   # - doxygen
   # - gettext
   # - gifsicle
@@ -48,7 +48,7 @@ homebrew_installed_packages:
   # - httpie
   # - iperf
   # - libevent
-  # - sqlite
+  - sqlite
   # - mcrypt
   # - nmap
   - node
@@ -56,12 +56,12 @@ homebrew_installed_packages:
   # - ssh-copy-id
   # - cowsay
   # - readline
-  # - openssl
+  - openssl
   # - pv
   - wget
   # - wrk
   - zsh
-  # - zsh-history-substring-search
+  - zsh-history-substring-search
 
 homebrew_taps:
   - homebrew/core
