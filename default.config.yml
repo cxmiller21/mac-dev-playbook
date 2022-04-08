@@ -37,6 +37,7 @@ sudoers_custom_config: ''
 homebrew_installed_packages:
   # - ansible # Installed via Pip.
   - autoconf
+  - aws
   - bash-completion
   # - doxygen
   # - gettext
@@ -58,6 +59,7 @@ homebrew_installed_packages:
   # - readline
   - openssl
   # - pv
+  - terraform
   - wget
   # - wrk
   - zsh
